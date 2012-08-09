@@ -1,0 +1,10 @@
+{
+  "name": "node-couch-sequence",
+  "version": "0.0.1",
+  "dependencies": {
+    "xtend": ">=1.0.3"
+  },
+  "engines": {
+    "node": "0.6.x"
+  }
+}
