@@ -11,8 +11,7 @@ npm install node-couch-sequence
 
 var opts = { 
 	db: [CRADLE_CONNECTION], 
-	versioningDoc: 
-	'NAME_OF_DOC_TO_STORE_VERSIONS', 
+	versioningDoc: 'NAME_OF_DOC_TO_STORE_VERSIONS', 
 	watchList: ['products', 'categories']
 };
 
