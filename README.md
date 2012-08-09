@@ -17,3 +17,15 @@ var opts = {
 
 var SequenceHandler = require('node-couch-sequence')(opts);
 ```
+
+You can then query the sequence handler as much as you like:
+
+```javascript
+var latest = SequenceHandler.getLatestSequenceIndex();
+```
+
+```javascript
+SequenceHandler.getChangesSince([SEQUENCE NUMBER], function(err, changes) {
+	console.log(changes);
+});
+```
