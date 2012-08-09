@@ -1,4 +1,5 @@
-var extend = require('xtend');
+var extend = require('xtend'),
+	Queue = require('nqueue');
 
 var SequenceHandler = (function() {
 
@@ -59,7 +60,7 @@ var SequenceHandler = (function() {
 	*/
 	SequencePrototype.takeWholeSnapshot = function(done) {
 		var sequenceHandler = this,
-			queue = new C.Queue(),
+			queue = new Queue(),
 			snapshot = {};
 
 		this.opts.watchList.forEach(function(docID) {
@@ -87,7 +88,7 @@ var SequenceHandler = (function() {
 	*/
 	SequencePrototype.takeSnapshot = function(docID, _rev, done) {
 		var sequenceHandler = this,
-			queue = new C.Queue(),
+			queue = new Queue(),
 			snapshot = {};
 
 		if (typeof _rev == 'function') {
