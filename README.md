@@ -6,7 +6,8 @@ Simple sequence based document versioning for CouchDB. Requires a [Cradle](https
 
 The module will subscribe to a changes feed via the CouchDB Changes API and monitor all the documents within the 'watchList' array.
 
-```npm install node-couch-sequence
+```javascript
+npm install node-couch-sequence
 
 var opts = { 
 	db: [CRADLE_CONNECTION], 
